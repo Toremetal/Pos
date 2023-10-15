@@ -1,0 +1,130 @@
+<!--
+  ~    ™T©ReMeTaL Pos.
+  ~    Copyright (C) 2021™T©ReMeTaL.
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~
+  ~    Some functionality created with modified (code) lessons provided by:
+  ~    The Android Open Source Project.
+  ~    Copyright (C) 2021 The Android Open Source Project.
+  ~    Licensed under the Apache License, Version 2.0 (the "License").
+  ~
+  ~    You may obtain a copy of the License at
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  ~
+  ~   ************************************************************************
+  ~     strings.xml : Copyright (c) 2021™T©ReMeTaL.
+  ~   ************************************************************************
+  ~      Computer Scientist: David W. Rick
+  ~      Date: 12/15/21, 8:23 AM
+  ~      Program Name: Pos
+  ~      File: strings.xml
+  ~      Last Modified: 12/14/21, 6:34 PM
+  ~   ************************************************************************
+  -->
+<resources>
+    <string name="sell">Sell</string>
+    <string name="quantity">Quantity in Stock:</string>
+    <string name="item_name_req">Item Name <font color='#FF0000'>*</font></string>
+    <string name="item_des_req">Item Description <font color='#FF0000'>*</font></string>
+    <string name="item_price_req">Item Price <font color='#FF0000'>*</font></string>
+    <string name="price_req">Price<font color='#FF0000'>*</font></string>
+    <string name="quantity_req">Quantity in Stock <font color='#FF0000'>*</font></string>
+    <string name="item_Cost">Item cost <font color='#FF0000'>*</font></string>
+    <string name="save_action">Save</string>
+    <string name="item_detail_fragment_title">Item Details</string>
+    <string name="add_fragment_title">Add Item</string>
+    <string name="price">Price</string>
+    <string name="quantity_in_stock">Quantity\nIn Stock</string>
+    <string name="item">Item</string>
+    <string name="delete">Delete</string>
+    <string name="delete_question">Are you sure you want to delete?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="currency_symbol">$</string>
+    <string name="edit_item">Edit Item</string>
+    <string name="add_new_item">Add new item</string>
+    <string name="add_stock">add Stock</string>
+    <string name="_1">1</string>
+    <string name="qty">Qty</string>
+    <string name="sub">Subtotal: %s</string>
+    <string name="saleList">%s</string>
+    <string name="item_search">Item Search</string>
+    <string name="zero">0</string>
+    <string name="nav_header_title">™T©ReMeTaL PO$</string>
+    <string name="nav_header_subtitle">www.toremetal.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="version_display_name">Version: %s</string>
+    <string name="menu_home">Checkout</string>
+    <string name="menu_slideshow">Settings</string>
+    <string name="inventory">Inventory</string>
+    <string name="app_name">™T©ReMeTaL PO$</string>
+    <string name="receipt">Receipt</string>
+    <string name="item_Name">Item name</string>
+    <string name="item_SalePrice">Price</string>
+    <string name="item_Quantity">Qty</string>
+    <string name="add_item">Add 2 Sale</string>
+    <string name="subTotalLabel">Subtotal: </string>
+    <string name="tax">Tax: %s</string>
+    <string name="tax2">Tax: </string>
+    <string name="total">Total: %s</string>
+    <string name="total2">Total:</string>
+    <string name="taxRLabel">Tax: %</string>
+    <string name="TransLabel">Id, Name, Quantity, Price</string>
+    <string name="buttons">End-Sale</string>
+    <string name="clearSal">Clear Sale</string>
+    <string name="exportSalesCsv">Create Sales.csv</string>
+    <string name="exportSalesPdf">Create Sales.pdf</string>
+    <string name="costDefault" translatable="false">0</string>
+    <string name="costWord">Cost</string>
+    <string name="tot3">All-Sales Total:</string>
+    <string name="add_item_data_to_current_sale">add item to current sale</string>
+    <string name="clear_current_sale">Clear current sale</string>
+    <string name="end_current_sale">End current sale</string>
+    <string name="sales">Sales</string>
+    <string name="playStoreLink" translatable="false">https://play.google.com/store/apps/dev?id=7952290850776080706</string>
+    <string name="mailTo" translatable="false">mailto:</string>
+    <string name="website" translatable="false">https://www.toremetal.com</string>
+    <string name="salesTxt" translatable="false">Sales.log</string>
+    <string name="salesCsv">Sales.csv</string>
+    <string name="salesCsvHeader1">Date,ID/UPC,Name,Description,Quantity,price,SubTotal,Tax,@TaxRate,Total Sale,Sale Cost,Sale Profit,Cost Total,Profit Total,Items Sold,Net Total,Tax Total,Gross Total</string>
+    <string name="salesCsvHeaderL2">,,,,,,,,,,,,=Sum(K:K),=Sum(L:L),=Sum(E:E),=Sum(G:G),=Sum(H:H),=Sum(J:J)</string>
+    <string name="inventoryCsvHeader">ID/UPC,Name,Description,Qty in Stock,Sell Price,Cost per Item,Sell Cost,Sell Revenue,Sell Contribution,Inventory,Cost,Sales Revenue,Contribution,</string>
+    <string name="inventoryCsvHeaderL2">,,,,,,,,,=Sum(E:E),=Sum(H:H),=Sum(I:I),=Sum(J:J),</string>
+    <string name="app_name_with_index" translatable="false">™T©ReMeTaL PO$ (%1$d/%2$d)</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <!-- <string name="close">Close</string>-->
+    <string name="tmpPdf" translatable="false">tmp.pdf</string>
+    <string name="pg" translatable="false">pg.</string>
+    <string name="textCsv" translatable="false">text/csv</string>
+    <string name="am">@string/material_timepicker_am</string>
+    <string name="pm">@string/material_timepicker_pm</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Settings</string>
+    <!-- Messages Preferences -->
+    <string name="signature_title">Business Name</string>
+    <string name="share">Send Sms</string>
+    <string name="sendsEmail">Send Email</string>
+    <!-- Sync Preferences -->
+    <string name="sale_message">sms/email auto-text</string>
+    <string name="item_id">Item ID</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="manual_entry">Manual Entry</string>
+    <string name="reset_sales_logs">Reset Sales Logs</string>
+    <string name="select_file">Select File</string>
+    <string name="view_file">View File</string>
+    <string name="ads">ads</string>
+    <string name="asset_statements" translatable="false">
+  [{
+    \"include\": \"https://toremetal.com/.well-known/assetlinks.json\"
+  }]
+  </string>
+</resources>

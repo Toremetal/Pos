@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~    ™T©ReMeTaL Pos.
+  ~    Copyright (C) 2021™T©ReMeTaL.
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~
+  ~    Some functionality created with modified (code) lessons provided by:
+  ~    The Android Open Source Project.
+  ~    Copyright (C) 2021 The Android Open Source Project.
+  ~    Licensed under the Apache License, Version 2.0 (the "License").
+  ~
+  ~    You may obtain a copy of the License at
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  ~
+  ~   ************************************************************************
+  ~     fragment_home.xml : Copyright (c) 2021™T©ReMeTaL.
+  ~   ************************************************************************
+  ~      Computer Scientist: David W. Rick
+  ~      Date: 12/14/21, 10:32 AM
+  ~      Program Name: Pos
+  ~      File: fragment_home.xml
+  ~      Last Modified: 11/25/21, 9:02 PM
+  ~   ************************************************************************
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:fillViewport="true"
+    tools:context=".ui.home.HomeFragment"
+    tools:keep="@layout/fragment_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <!--
+            ads:adUnitId="ca-app-pub-8927593002808864/7430275914"
+            ID for testing banner adUnit: ca-app-pub-3940256099942544/6300978111
+            -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/dateView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:gravity="center"
+                android:shadowColor="#930000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textColor="#546E7A"
+                tools:text="1-1-2021" />
+
+            <TextClock
+                android:id="@+id/clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:gravity="center"
+                android:shadowColor="#930000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textColor="#546E7A"
+                tools:text="2:11 pm" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:filterTouchesWhenObscured="true"
+                android:fontFamily="casual"
+                android:padding="@dimen/margin_between_elements"
+                android:shadowColor="#512DA8"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/sendsEmail" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:filterTouchesWhenObscured="true"
+                android:fontFamily="casual"
+                android:padding="@dimen/margin_between_elements"
+                android:shadowColor="#512DA8"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/share" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:background="#DAE4E4E4"
+                android:dividerPadding="8dp"
+                android:fontFamily="casual"
+                android:gravity="center|center_vertical|center_horizontal"
+                android:hint="@string/taxRLabel"
+                tools:layout_editor_absoluteX="203dp"
+                tools:layout_editor_absoluteY="147dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextTaxRate"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="auto"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textSize="24sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:shadowColor="#4E0300"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/tax2"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewTax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="center_vertical"
+                android:minWidth="56dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:shadowColor="#4E0300"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/costDefault"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="end"
+                android:shadowColor="#4E0300"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/subTotalLabel"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewSubTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="start"
+                android:padding="@dimen/margin_between_elements"
+                android:shadowColor="#4E0300"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="end"
+                android:shadowColor="#4E0300"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/total2"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="start"
+                android:shadowColor="#4E0300"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/costDefault"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/floatingActionButton10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/myButtonBackground"
+                android:clickable="true"
+                android:contentDescription="@string/clear_current_sale"
+                android:filterTouchesWhenObscured="true"
+                android:focusable="true"
+                android:fontFamily="casual"
+                android:importantForAccessibility="auto"
+                android:padding="8dp"
+                android:shadowColor="#CC0000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/clearSal"
+                android:textColor="#0037FF"
+                app:drawableTopCompat="@drawable/ic_reset"
+                tools:layout_editor_absoluteX="21dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/floatingActionButtonEndSale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/myButtonBackground"
+                android:clickable="true"
+                android:contentDescription="@string/end_current_sale"
+                android:filterTouchesWhenObscured="true"
+                android:focusable="true"
+                android:fontFamily="casual"
+                android:importantForAccessibility="auto"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:shadowColor="#CC0000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/buttons"
+                android:textColor="#0037FF"
+                app:drawableTopCompat="@drawable/ic_end_sale_gold"
+                tools:layout_editor_absoluteX="114dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/addItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/myButtonBackground"
+                android:clickable="true"
+                android:contentDescription="@string/add_item_data_to_current_sale"
+                android:filterTouchesWhenObscured="true"
+                android:focusable="true"
+                android:fontFamily="casual"
+                android:importantForAccessibility="auto"
+                android:padding="8dp"
+                android:shadowColor="#CC0000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/add_item"
+                android:textColor="#0037FF"
+                app:drawableTopCompat="@drawable/ic_add_shopping_cart" />
+        </LinearLayout>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:padding="@dimen/margin_between_elements"
+            android:shadowColor="#512DA8"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="@string/manual_entry" />
+
+        <LinearLayout
+            android:id="@+id/ManualEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginEnd="@dimen/margin"
+                android:dividerPadding="8dp"
+                android:fontFamily="casual"
+                android:gravity="center|center_vertical|center_horizontal"
+                android:hint="@string/item_name_req"
+                tools:layout_editor_absoluteX="203dp"
+                tools:layout_editor_absoluteY="147dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/newId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="auto"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="24sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|top"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin"
+                    android:layout_marginEnd="@dimen/margin"
+                    android:dividerPadding="8dp"
+                    android:fontFamily="casual"
+                    android:hint="@string/item_Quantity"
+                    tools:layout_editor_absoluteX="203dp"
+                    tools:layout_editor_absoluteY="147dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/newQty"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="auto"
+                        android:fontFamily="casual"
+                        android:gravity="center"
+                        android:inputType="numberSigned"
+                        android:singleLine="true"
+                        android:text="@string/_1"
+                        android:textSize="24sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin"
+                    android:layout_marginEnd="@dimen/margin"
+                    android:dividerPadding="8dp"
+                    android:fontFamily="casual"
+                    android:gravity="center|center_vertical|center_horizontal"
+                    android:hint="@string/price_req"
+                    tools:layout_editor_absoluteX="203dp"
+                    tools:layout_editor_absoluteY="147dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/newPrice"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="auto"
+                        android:fontFamily="casual"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:textSize="24sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addManEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_between_elements"
+                android:backgroundTint="#1976D2"
+                android:drawableEnd="@drawable/ic_cart"
+                android:text="@string/add_item" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/labelForCurrentSaleItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#BEFFFFFF"
+            android:fontFamily="casual"
+            android:hint="@string/TransLabel"
+            android:importantForAccessibility="no"
+            android:shadowColor="#CC0000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textColorHint="#757575" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/currentSaleItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#BEFFFFFF"
+            android:fontFamily="casual"
+            android:freezesText="true"
+            android:gravity="center|center_horizontal|top"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/myButtonBackground"
+                android:fontFamily="casual"
+                android:padding="16dp"
+                android:text="@string/tot3" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#BEFFFFFF"
+                android:fontFamily="casual"
+                android:freezesText="true"
+                android:gravity="center"
+                android:shadowColor="#0037FF"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textColor="#CC0000"
+                android:textSize="18sp"
+                android:visibility="gone"
+                tools:text="all Sales Totals"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/costView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/myButtonBackground"
+                android:fontFamily="casual"
+                android:padding="16dp"
+                android:text="@string/costWord" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#BEFFFFFF"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:shadowColor="#CC0000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/costDefault"
+                android:textColor="#0037FF"
+                android:textSize="24sp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
